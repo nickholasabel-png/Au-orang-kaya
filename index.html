@@ -1,1 +1,57 @@
-
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Nicholas Abel</title>
+    <style>
+        body { margin: 0; padding: 0; background: #000 url('https://unsplash.com') no-repeat center center fixed; background-size: cover; font-family: -apple-system, BlinkMacSystemFont, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; color: white; overflow: hidden; }
+        .iphone-screen { width: 360px; height: 740px; border: 12px solid #222; border-radius: 40px; position: relative; background: rgba(0,0,0,0.3); box-shadow: 0 20px 40px rgba(0,0,0,0.5); padding: 20px; box-sizing: border-box; }
+        .dynamic-island { width: 110px; height: 30px; background: black; border-radius: 20px; margin: 0 auto 30px auto; }
+        .widget-container { display: flex; justify-content: space-between; margin-bottom: 25px; }
+        .widget { width: 140px; height: 140px; background: rgba(255, 255, 255, 0.9); border-radius: 24px; color: black; padding: 15px; box-sizing: border-box; }
+        .widget-title { color: #ff3b30; font-weight: bold; font-size: 14px; margin-bottom: 5px; }
+        .widget-date { font-size: 28px; font-weight: bold; margin-bottom: 5px; }
+        .widget-todo { font-size: 12px; font-weight: 600; border-left: 3px solid #5856d6; padding-left: 5px; }
+        .widget-weather { background: linear-gradient(135deg, #5ac8fa, #007aff); color: white; }
+        .app-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 15px; padding: 10px 5px; }
+        .app-icon { display: flex; flex-direction: column; align-items: center; text-decoration: none; color: white; }
+        .icon-box { width: 55px; height: 55px; border-radius: 12px; display: flex; justify-content: center; align-items: center; font-size: 24px; margin-bottom: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); position: relative; }
+        .badge { position: absolute; top: -5px; right: -5px; background: red; color: white; font-size: 11px; padding: 2px 6px; border-radius: 10px; font-weight: bold; }
+        .app-name { font-size: 11px; text-align: center; opacity: 0.9; }
+        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .photos { background: white; font-size: 20px; }
+        .notes { background: #faffbd; color: #333; }
+        .settings { background: #8e8e93; }
+        .dock { position: absolute; bottom: 20px; left: 15px; right: 15px; height: 85px; background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(20px); border-radius: 30px; display: flex; justify-content: space-around; align-items: center; padding: 0 10px; }
+    </style>
+</head>
+<body>
+<div class="iphone-screen">
+    <div class="dynamic-island"></div>
+    <div class="widget-container">
+        <div class="widget">
+            <div class="widget-title">Sabtu</div>
+            <div class="widget-date">17</div>
+            <div class="widget-todo"><strong>Belanja</strong><br><span style="color:gray; font-size:10px;">Sepanjang hari</span></div>
+        </div>
+        <div class="widget widget-weather">
+            <div style="font-size: 13px;">Seoul ✈️</div>
+            <div style="font-size: 32px; font-weight: bold; margin: 5px 0;">18°</div>
+            <div style="font-size: 11px;">Sebagian Besar Cerah</div>
+        </div>
+    </div>
+    <div class="app-grid">
+        <div class="app-icon"><div class="icon-box instagram">📸</div><div class="app-name">Instagram</div></div>
+        <div class="app-icon"><div class="icon-box photos">🌸</div><div class="app-name">Foto</div></div>
+        <div class="app-icon"><div class="icon-box notes">📝</div><div class="app-name">Catatan</div></div>
+        <div class="app-icon"><div class="icon-box settings">⚙️</div><div class="app-name">Pengaturan</div></div>
+    </div>
+    <div class="dock">
+        <div class="app-icon"><div class="icon-box" style="background:#4cd964;">📞<span class="badge">3</span></div></div>
+        <div class="app-icon"><div class="icon-box" style="background:#ff9500;">💬<span class="badge">12</span></div></div>
+        <div class="app-icon"><div class="icon-box" style="background:#ff2d55;">🎵</div></div>
+    </div>
+</div>
+</body>
+  </html>
